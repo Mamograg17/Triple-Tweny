@@ -22,7 +22,7 @@ jobs:
       uses: teddyking/dependency-action@v2.0.0 
       with:
        deps: https://github.com/wxWidgets/wxWidgets/archive/refs/tags/v3.1.7.tar.gz
-       run: cd ~/wxWidgets-3.1.7/ && make
+       run: cd ~/wxWidgets-3.1.7/ && make && make install
        
     - uses: actions/checkout@v3
      
